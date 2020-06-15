@@ -48,7 +48,9 @@ func (t *Socks5) UDP(conn net.Conn) {
 // func NewIPIO(t Interface, h Handler) *IPIO
 ii := ipio.NewIPIO(tun, &Socks5{})
 
+// func (t *IPIO) Run() error
 ii.Run()
 
+// func (t *IPIO) Close() error
 ii.Close()
 ```
