@@ -39,6 +39,14 @@ COPYRIGHT:
    https://github.com/txthinking/ipio
 ```
 
+#### tun2socks
+
+```
+# ROOT privileges required
+$ ipio tun2socks -s socks5_server_address -4 --bypassCIDR4 any_remote_ip_socks5_server_will_dial_with
+```
+> more `$ ipio tun2socks -h`
+
 ## Developer
 
 ### Interface
