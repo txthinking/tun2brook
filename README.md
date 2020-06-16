@@ -5,6 +5,40 @@ ipio can convert Network/IPv4/IPv6 layer packets to Transport/TCP/UDP layer pack
 
 No C, No CGO, written in Pure Go, can be used in any OS, such as Linux, macOS, Android, iOS, etc...
 
+### Install via [nami](https://github.com/txthinking/ipio)
+
+```
+$ nami install github.com/txthinking/ipio
+```
+
+### Usage
+
+```
+NAME:
+   ipio - ipio can convert Network/IPv4/IPv6 layer packets to Transport/TCP/UDP layer packets, such as tun to socks5, tun to brook server, tun to brook wsserver, ...
+
+USAGE:
+   ipio [global options] command [command options] [arguments...]
+
+VERSION:
+   20200615
+
+AUTHOR:
+   Cloud <cloud@txthinking.com>
+
+COMMANDS:
+   tun2socks  Tun to socks5 server
+   clean      If ipio exit not by itself, this command will try to clean not required routes. If something wrong when clean or next run, then fix routes manually or restart network or restart OS
+   help, h    Shows a list of commands or help for one command
+
+GLOBAL OPTIONS:
+   --help, -h     show help (default: false)
+   --version, -v  print the version (default: false)
+
+COPYRIGHT:
+   https://github.com/txthinking/ipio
+```
+
 ### Interface
 
 ```
