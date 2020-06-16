@@ -5,7 +5,7 @@ ipio can convert Network/IPv4/IPv6 layer packets to Transport/TCP/UDP layer pack
 
 No C, No CGO, written in Pure Go, can be used in any OS, such as Linux, macOS, Android, iOS, etc...
 
-### Install via [nami](https://github.com/txthinking/ipio)
+### Install via [nami](https://github.com/txthinking/nami)
 
 ```
 $ nami install github.com/txthinking/ipio
