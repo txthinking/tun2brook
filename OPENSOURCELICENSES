@@ -97,7 +97,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 Only one file copied from:
 https://github.com/yinghuocho/gotun2socks/blob/master/tun/tun_windows.go
 Under the BSD 2-Clause "Simplified" License.
-It doen't support IPv6, and I will rewrite this stackwhen I have enough
+It doen't support IPv6, and I will rewrite this stack when I have enough
 money to buy a Windows computer.
 
 Copyright (c) 2016, yinghuocho
