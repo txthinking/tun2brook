@@ -79,14 +79,14 @@ type Socks5 struct{
 
 func (t *Socks5) TCP(conn net.Conn) {
     c, _ := socks5.NewClient(server, username, password, 60, 0, 60)
-    rc, _ := s.Client.Dial("tcp", conn.RemoteAddr().String()) 
+    rc, _ := c.Dial("tcp", conn.RemoteAddr().String()) 
     go io.Copy(conn, rc)
     io.Copy(rc, conn)
 }
 
 func (t *Socks5) UDP(conn net.Conn) {
     c, _ := socks5.NewClient(server, username, password, 60, 0, 60)
-    rc, _ := s.Client.Dial("udp", conn.RemoteAddr().String()) 
+    rc, _ := c.Dial("udp", conn.RemoteAddr().String()) 
     go io.Copy(conn, rc)
     io.Copy(rc, conn)
 }
