@@ -52,7 +52,7 @@ $ ipio tun2brookserver -s 1.2.3.4:9999 -p hello
 
 #### tun2brookwsserver
 
-> Assume your brook server is `ws://1.2.3.4:9999`, password is `hello`
+> Assume your brook wsserver is `ws://1.2.3.4:9999`, password is `hello`
 
 ```
 $ ipio tun2brookwsserver -s ws://1.2.3.4:9999 -p hello
