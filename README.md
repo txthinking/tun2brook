@@ -21,15 +21,16 @@ USAGE:
    ipio [global options] command [command options] [arguments...]
 
 VERSION:
-   20200701
+   20200901
 
 AUTHOR:
    Cloud <cloud@txthinking.com>
 
 COMMANDS:
-   tun2socks  Tun to socks5 server
-   clean      If ipio exit not by itself, this command will try to clean not required routes. If something wrong when clean or next run, then fix routes manually or restart network or restart OS
-   help, h    Shows a list of commands or help for one command
+   tun2brookserver    Tun to brook server
+   tun2brookwsserver  Tun to brook wsserver
+   tun2socks          Tun to socks5 server
+   help, h            Shows a list of commands or help for one command
 
 GLOBAL OPTIONS:
    --help, -h     show help (default: false)
@@ -39,13 +40,35 @@ COPYRIGHT:
    https://github.com/txthinking/ipio
 ```
 
-#### tun2socks
+#### tun2brookserver
+
+> Assume your brook server is `1.2.3.4:9999`, password is `hello`
 
 ```
-# ROOT privileges required
-$ ipio tun2socks -s socks5_server_address -4 --bypassCIDR4 any_remote_ip_socks5_server_will_dial_with
+$ ipio tun2brookserver -s 1.2.3.4:9999 -p hello
 ```
-> more `$ ipio tun2socks -h`
+
+> ROOT privileges required, more `$ ipio tun2brookserver -h`
+
+#### tun2brookwsserver
+
+> Assume your brook server is `ws://1.2.3.4:9999`, password is `hello`
+
+```
+$ ipio tun2brookwsserver -s ws://1.2.3.4:9999 -p hello
+```
+
+> ROOT privileges required, more `$ ipio tun2brookwsserver -h`
+
+#### tun2socks
+
+> Assume your socks5 server is `1.2.3.4:1080`
+
+```
+$ ipio tun2socks -s 1.2.3.4:1080
+```
+
+> ROOT privileges required, more `$ ipio tun2socks -h`
 
 ## Developer
 
@@ -78,14 +101,14 @@ type Socks5 struct{
 }
 
 func (t *Socks5) TCP(conn net.Conn) {
-    c, _ := socks5.NewClient(server, username, password, 60, 0, 60)
+    c, _ := socks5.NewClient(server, username, password, 0, 60)
     rc, _ := c.Dial("tcp", conn.RemoteAddr().String()) 
     go io.Copy(conn, rc)
     io.Copy(rc, conn)
 }
 
 func (t *Socks5) UDP(conn net.Conn) {
-    c, _ := socks5.NewClient(server, username, password, 60, 0, 60)
+    c, _ := socks5.NewClient(server, username, password, 0, 60)
     rc, _ := c.Dial("udp", conn.RemoteAddr().String()) 
     go io.Copy(conn, rc)
     io.Copy(rc, conn)
