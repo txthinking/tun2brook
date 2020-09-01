@@ -72,7 +72,7 @@ $ ipio tun2socks -s 1.2.3.4:1080
 
 ## Developer
 
-Please waiting. The code is still messy and include company internal code.
+Please wait. The code is still messy and include company internal code.
 
 ### Interface
 
