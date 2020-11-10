@@ -13,6 +13,8 @@ No C, No CGO, written in Pure Go, can be used in any OS, such as Linux, macOS, A
 $ nami install github.com/txthinking/ipio
 ```
 
+or download binary from [releases](https://github.com/txthinking/ipio/releases)
+
 ### Usage
 
 ```
