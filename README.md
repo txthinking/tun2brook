@@ -5,6 +5,8 @@ ipio can convert Network/IPv4/IPv6 layer packets to Transport/TCP/UDP layer pack
 
 No C, No CGO, written in Pure Go, can be used in any OS, such as Linux, macOS, Android, iOS, etc...
 
+> Windows, need to install [tap-windows](http://swupdate.openvpn.net/community/releases/tap-windows-9.21.2.exe) first, Copyright OpenVPN Technologies, Inc.
+
 ### Install via [nami](https://github.com/txthinking/nami)
 
 ```
