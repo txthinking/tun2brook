@@ -2,7 +2,7 @@
 
 [English](README.md)
 
-ipio 可以将网络层/IPv4/IPv6数据包转化为传输层/TCP/UDP数据包, 比如tun to socks5, tun to brook server, tun to brook wsserver.
+ipio 实现了TCP/IP栈, 可以将网络层/IPv4/IPv6数据包转化为传输层/TCP/UDP数据包, 比如tun to socks5, tun to brook server, tun to brook wsserver.
 
 ### Pure Go
 
