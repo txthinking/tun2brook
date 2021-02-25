@@ -31,7 +31,7 @@ USAGE:
    ipio [global options] command [command options] [arguments...]
 
 VERSION:
-   20201111
+   20210214
 
 AUTHOR:
    Cloud <cloud@txthinking.com>
@@ -39,6 +39,7 @@ AUTHOR:
 COMMANDS:
    tun2brookserver    Tun to brook server
    tun2brookwsserver  Tun to brook wsserver
+   tun2brookwssserver Tun to brook wssserver
    tun2socks          Tun to socks5 server
    help, h            Shows a list of commands or help for one command
 
