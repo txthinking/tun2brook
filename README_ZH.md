@@ -3,7 +3,6 @@
 [English](README.md)
 
 [![捐赠](https://img.shields.io/badge/%E6%94%AF%E6%8C%81-%E6%8D%90%E8%B5%A0-ff69b4.svg)](https://www.txthinking.com/opensource-support.html)
-[![交流群](https://img.shields.io/badge/%E7%94%B3%E8%AF%B7%E5%8A%A0%E5%85%A5-%E4%BA%A4%E6%B5%81%E7%BE%A4-ff69b4.svg)](https://docs.google.com/forms/d/e/1FAIpQLSdzMwPtDue3QoezXSKfhW88BXp57wkbDXnLaqokJqLeSWP9vQ/viewform)
 
 ipio 实现了TCP/IP栈, 可以将网络层/IPv4/IPv6数据包转化为传输层/TCP/UDP数据包, 比如tun to socks5, tun to brook server, tun to brook wsserver.
 
@@ -31,7 +30,7 @@ USAGE:
    ipio [global options] command [command options] [arguments...]
 
 VERSION:
-   20201111
+   20210214
 
 AUTHOR:
    Cloud <cloud@txthinking.com>
@@ -39,6 +38,7 @@ AUTHOR:
 COMMANDS:
    tun2brookserver    Tun to brook server
    tun2brookwsserver  Tun to brook wsserver
+   tun2brookwssserver Tun to brook wssserver
    tun2socks          Tun to socks5 server
    help, h            Shows a list of commands or help for one command
 
