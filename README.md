@@ -24,7 +24,7 @@ or download binary from [releases](https://github.com/txthinking/ipio/releases)
 
 ```
 NAME:
-   ipio - ipio can convert Network/IPv4/IPv6 layer packets to Transport/TCP/UDP layer packets, such as tun to socks5, tun to brook server, tun to brook wsserver, ...
+   ipio - ipio can convert Network/IPv4/IPv6 layer packets to Transport/TCP/UDP layer packets, such as tun to socks5, tun to brook server, tun to brook wsserver, tun to brook wssserver, ...
 
 USAGE:
    ipio [global options] command [command options] [arguments...]
