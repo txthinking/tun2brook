@@ -4,7 +4,7 @@
 
 [![Donate](https://img.shields.io/badge/Support-Donate-ff69b4.svg)](https://www.txthinking.com/opensource-support.html)
 
-ipio has implemented the TCP/IP stack, can convert Network/IPv4/IPv6 layer packets to Transport/TCP/UDP layer packets, such as tun to socks5, tun to brook server, tun to brook wsserver, tun to brook wssserver. **Let all traffic go through socks5, brook server, brook wsserver, brook wssserver**
+ipio has implemented the TCP/IP stack, can convert Network/IPv4/IPv6 layer packets to Transport/TCP/UDP layer packets, such as tun to socks5, tun to brook server, tun to brook wsserver, tun to brook wssserver. **Let all traffic of system go through socks5, brook server, brook wsserver, brook wssserver**
 
 ### Pure Go
 
