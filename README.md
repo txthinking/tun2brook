@@ -4,7 +4,7 @@
 
 [![Donate](https://img.shields.io/badge/Support-Donate-ff69b4.svg)](https://www.txthinking.com/opensource-support.html)
 
-ipio has implemented the TCP/IP stack, can convert Network/IPv4/IPv6 layer packets to Transport/TCP/UDP layer packets, such as tun to socks5, tun to brook server, tun to brook wsserver.
+ipio has implemented the TCP/IP stack, can convert Network/IPv4/IPv6 layer packets to Transport/TCP/UDP layer packets, such as tun to socks5, tun to brook server, tun to brook wsserver, tun to brook wssserver. **Let all traffic go through socks5, brook server, brook wsserver, brook wssserver**
 
 ### Pure Go
 
@@ -30,7 +30,7 @@ USAGE:
    ipio [global options] command [command options] [arguments...]
 
 VERSION:
-   20210214
+   20210401
 
 AUTHOR:
    Cloud <cloud@txthinking.com>
@@ -39,7 +39,7 @@ COMMANDS:
    tun2brookserver    Tun to brook server
    tun2brookwsserver  Tun to brook wsserver
    tun2brookwssserver Tun to brook wssserver
-   tun2socks          Tun to socks5 server
+   tun2socks5         Tun to socks5 server
    help, h            Shows a list of commands or help for one command
 
 GLOBAL OPTIONS:
@@ -57,6 +57,14 @@ COPYRIGHT:
 ```
 $ ipio tun2brookserver -s 1.2.3.4:9999 -p hello
 ```
+With bypass rules
+```
+$ ipio tun2brookserver -s 1.2.3.4:9999 -p hello --bypassDomainList https://txthinking.github.io/bypass/chinadomain.txt --bypassCIDR4List https://txthinking.github.io/bypass/chinacidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/chinacidr6.txt
+```
+Do not change route(include bypass CIDR/IP) and DNS when you want to change by yourself
+```
+$ ipio tun2brookserver -s 1.2.3.4:9999 -p hello --doNotChangeAnything
+```
 
 > ROOT privileges required, more `$ ipio tun2brookserver -h`
 
@@ -70,7 +78,7 @@ $ ipio tun2brookwsserver -s ws://1.2.3.4:9999 -p hello
 
 > ROOT privileges required, more `$ ipio tun2brookwsserver -h`
 
-#### tun2socks
+#### tun2socks5
 
 > Assume your socks5 server is `1.2.3.4:1080`
 
