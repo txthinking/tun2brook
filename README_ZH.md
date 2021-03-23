@@ -50,7 +50,7 @@ COPYRIGHT:
    https://github.com/txthinking/ipio
 ```
 
-#### tun2brookserver
+### tun2brookserver
 
 > 假设你的 brook server 是 `1.2.3.4:9999`, password 是 `hello`<br/>
 > ROOT 权限需要, 更多 `$ ipio tun2brookserver -h`
@@ -67,7 +67,7 @@ $ ipio tun2brookserver -s 1.2.3.4:9999 -p hello --bypassDomainList https://txthi
 $ ipio tun2brookserver -s 1.2.3.4:9999 -p hello --doNotChangeAnything
 ```
 
-#### tun2brookwsserver
+### tun2brookwsserver
 
 > 假设你的 brook wsserver 是 `ws://1.2.3.4:9999`, password 是 `hello`<br/>
 > ROOT 权限需要, 更多 `$ ipio tun2brookwsserver -h`
@@ -84,7 +84,7 @@ $ ipio tun2brookwsserver -s ws://1.2.3.4:9999 -p hello --bypassDomainList https:
 $ ipio tun2brookwsserver -s ws://1.2.3.4:9999 -p hello --doNotChangeAnything
 ```
 
-#### tun2brookwssserver
+### tun2brookwssserver
 
 > 假设你的 brook wssserver 是 `wss://domain.com:443`, password 是 `hello`<br/>
 > ROOT 权限需要, 更多 `$ ipio tun2brookwssserver -h`
@@ -101,7 +101,7 @@ $ ipio tun2brookwssserver -s wss://domain.com:443 -p hello --bypassDomainList ht
 $ ipio tun2brookwssserver -s wss://domain.com:443 -p hello --doNotChangeAnything
 ```
 
-#### tun2socks5
+### tun2socks5
 
 > 假设你的 socks5 server is `1.2.3.4:1080`<br/>
 > ROOT 权限需要, 更多 `$ ipio tun2socks5 -h`
