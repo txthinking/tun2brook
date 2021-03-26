@@ -122,52 +122,10 @@ $ ipio tun2socks5 -s 1.2.3.4:1080 --doNotChangeAnything
 
 即将到来
 
-### Interface
+## 作者
 
-```
-# Interface can be tun device, fd
-type Interface interface {
-    io.ReadWriteCloser
-}
-```
+A project by [txthinking](https://www.txthinking.com)
 
-```
-# Handler you need to implement
-type Handler interface {
-    TCP(conn net.Conn)
-    UDP(conn net.Conn)
-}
-```
+## 开源协议
 
-### Tun2socks Example
-
-```
-import "github.com/txthinking/ipio"
-import "github.com/txthinking/socks5"
-
-type Socks5 struct{
-}
-
-func (t *Socks5) TCP(conn net.Conn) {
-    c, _ := socks5.NewClient(server, username, password, 0, 60)
-    rc, _ := c.Dial("tcp", conn.RemoteAddr().String()) 
-    go io.Copy(conn, rc)
-    io.Copy(rc, conn)
-}
-
-func (t *Socks5) UDP(conn net.Conn) {
-    c, _ := socks5.NewClient(server, username, password, 0, 60)
-    rc, _ := c.Dial("udp", conn.RemoteAddr().String()) 
-    go io.Copy(conn, rc)
-    io.Copy(rc, conn)
-}
-
-// func NewIPIO(t Interface, h Handler) *IPIO
-ii := ipio.NewIPIO(tun, &Socks5{})
-
-// func (t *IPIO) Run() error
-ii.Run()
-
-// func (t *IPIO) Close() error
-ii.Close()
-```
+基于 GPLv3 协议开源
