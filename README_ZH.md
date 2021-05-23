@@ -4,13 +4,11 @@
 
 [![捐赠](https://img.shields.io/badge/%E6%94%AF%E6%8C%81-%E6%8D%90%E8%B5%A0-ff69b4.svg)](https://www.txthinking.com/opensource-support.html)
 
-ipio 实现了TCP/IP栈, 可以将网络层/IPv4/IPv6数据包转化为传输层/TCP/UDP数据包, 比如tun to socks5, tun to brook server, tun to brook wsserver, tun to brook wssserver. **讓系統所有流量全部走socks5, brook server, brook wsserver, brook wssserver.**
+tun2socks5, tun2brookserver, tun2brookwsserver, tun2brookwssserver. IPv4 and IPv6, TCP and UDP.
 
 ### Pure Go
 
 没有C, 没有 CGO, 使用纯Go编写, 可以被用在Linux, macOS, Windows, Android, iOS, 等...
-
-> Windows, 需要先安装 [tap-windows](http://swupdate.openvpn.net/community/releases/tap-windows-9.21.2.exe), Copyright OpenVPN Technologies, Inc.
 
 ### 通过 [nami](https://github.com/txthinking/nami) 安装
 
@@ -30,7 +28,7 @@ USAGE:
    ipio [global options] command [command options] [arguments...]
 
 VERSION:
-   20210427
+   20210523
 
 AUTHOR:
    Cloud <cloud@txthinking.com>
@@ -62,9 +60,9 @@ Bypass規則
 ```
 $ ipio tun2brookserver -s 1.2.3.4:9999 -p hello --bypassDomainList https://txthinking.github.io/bypass/chinadomain.txt --bypassCIDR4List https://txthinking.github.io/bypass/chinacidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/chinacidr6.txt
 ```
-不修改路由表和DNS, 自己去修改
+不修改路由表和DNS, 自己修改
 ```
-$ ipio tun2brookserver -s 1.2.3.4:9999 -p hello --doNotChangeAnything
+$ ipio tun2brookserver -s 1.2.3.4:9999 -p hello --doNotChangeRouteAndDNS
 ```
 
 ### tun2brookwsserver
@@ -79,9 +77,9 @@ Bypass規則
 ```
 $ ipio tun2brookwsserver -s ws://1.2.3.4:9999 -p hello --bypassDomainList https://txthinking.github.io/bypass/chinadomain.txt --bypassCIDR4List https://txthinking.github.io/bypass/chinacidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/chinacidr6.txt
 ```
-不修改路由表和DNS, 自己去修改
+不修改路由表和DNS, 自己修改
 ```
-$ ipio tun2brookwsserver -s ws://1.2.3.4:9999 -p hello --doNotChangeAnything
+$ ipio tun2brookwsserver -s ws://1.2.3.4:9999 -p hello --doNotChangeRouteAndDNS
 ```
 
 ### tun2brookwssserver
@@ -96,9 +94,9 @@ Bypass規則
 ```
 $ ipio tun2brookwssserver -s wss://domain.com:443 -p hello --bypassDomainList https://txthinking.github.io/bypass/chinadomain.txt --bypassCIDR4List https://txthinking.github.io/bypass/chinacidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/chinacidr6.txt
 ```
-不修改路由表和DNS, 自己去修改
+不修改路由表和DNS, 自己修改
 ```
-$ ipio tun2brookwssserver -s wss://domain.com:443 -p hello --doNotChangeAnything
+$ ipio tun2brookwssserver -s wss://domain.com:443 -p hello --doNotChangeRouteAndDNS
 ```
 
 ### tun2socks5
@@ -113,9 +111,9 @@ Bypass規則
 ```
 $ ipio tun2socks5 -s 1.2.3.4:1080 --bypassDomainList https://txthinking.github.io/bypass/chinadomain.txt --bypassCIDR4List https://txthinking.github.io/bypass/chinacidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/chinacidr6.txt
 ```
-不修改路由表和DNS, 自己去修改
+不修改路由表和DNS, 自己修改
 ```
-$ ipio tun2socks5 -s 1.2.3.4:1080 --doNotChangeAnything
+$ ipio tun2socks5 -s 1.2.3.4:1080 --doNotChangeRouteAndDNS
 ```
 
 ## 开发者
