@@ -4,13 +4,11 @@
 
 [![Donate](https://img.shields.io/badge/Support-Donate-ff69b4.svg)](https://www.txthinking.com/opensource-support.html)
 
-ipio has implemented the TCP/IP stack, can convert Network/IPv4/IPv6 layer packets to Transport/TCP/UDP layer packets, such as tun to socks5, tun to brook server, tun to brook wsserver, tun to brook wssserver. **Let all traffic of system go through socks5, brook server, brook wsserver, brook wssserver**
+tun2socks5, tun2brookserver, tun2brookwsserver, tun2brookwssserver. IPv4 and IPv6, TCP and UDP.
 
 ### Pure Go
 
 No C, No CGO, written in Pure Go, can be used in any OS, such as Linux, macOS, Windows, Android, iOS, etc...
-
-> Windows, need to install [tap-windows](http://swupdate.openvpn.net/community/releases/tap-windows-9.21.2.exe) first, Copyright OpenVPN Technologies, Inc.
 
 ### Install via [nami](https://github.com/txthinking/nami)
 
@@ -30,7 +28,7 @@ USAGE:
    ipio [global options] command [command options] [arguments...]
 
 VERSION:
-   20210427
+   20210523
 
 AUTHOR:
    Cloud <cloud@txthinking.com>
@@ -64,7 +62,7 @@ $ ipio tun2brookserver -s 1.2.3.4:9999 -p hello --bypassDomainList https://txthi
 ```
 Do not change route(include bypass CIDR/IP) and DNS when you want to change by yourself
 ```
-$ ipio tun2brookserver -s 1.2.3.4:9999 -p hello --doNotChangeAnything
+$ ipio tun2brookserver -s 1.2.3.4:9999 -p hello --doNotChangeRouteAndDNS
 ```
 
 ### tun2brookwsserver
@@ -81,7 +79,7 @@ $ ipio tun2brookwsserver -s ws://1.2.3.4:9999 -p hello --bypassDomainList https:
 ```
 Do not change route(include bypass CIDR/IP) and DNS when you want to change by yourself
 ```
-$ ipio tun2brookwsserver -s ws://1.2.3.4:9999 -p hello --doNotChangeAnything
+$ ipio tun2brookwsserver -s ws://1.2.3.4:9999 -p hello --doNotChangeRouteAndDNS
 ```
 
 ### tun2brookwssserver
@@ -98,7 +96,7 @@ $ ipio tun2brookwssserver -s wss://domain.com:443 -p hello --bypassDomainList ht
 ```
 Do not change route(include bypass CIDR/IP) and DNS when you want to change by yourself
 ```
-$ ipio tun2brookwssserver -s wss://domain.com:443 -p hello --doNotChangeAnything
+$ ipio tun2brookwssserver -s wss://domain.com:443 -p hello --doNotChangeRouteAndDNS
 ```
 
 ### tun2socks5
@@ -115,7 +113,7 @@ $ ipio tun2socks5 -s 1.2.3.4:1080 --bypassDomainList https://txthinking.github.i
 ```
 Do not change route(include bypass CIDR/IP) and DNS when you want to change by yourself
 ```
-$ ipio tun2socks5 -s 1.2.3.4:1080 --doNotChangeAnything
+$ ipio tun2socks5 -s 1.2.3.4:1080 --doNotChangeRouteAndDNS
 ```
 
 ## Developer
