@@ -8,7 +8,7 @@ tun2socks5, tun2brookserver, tun2brookwsserver, tun2brookwssserver. IPv4 and IPv
 
 ### Pure Go
 
-No C, No CGO, written in Pure Go, can be used in any OS, such as Linux, macOS, Windows, Android, iOS, etc...
+ipio implements the TCP/IP stack with part of gopacket lib, No C, No CGO, can be used in any OS, such as Linux, macOS, Windows, Android, iOS, etc...
 
 ### Install via [nami](https://github.com/txthinking/nami)
 
