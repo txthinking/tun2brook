@@ -28,7 +28,7 @@ USAGE:
    ipio [global options] command [command options] [arguments...]
 
 VERSION:
-   20210523
+   20210601
 
 AUTHOR:
    Cloud <cloud@txthinking.com>
