@@ -6,6 +6,8 @@
 
 tun2socks5, tun2brookserver, tun2brookwsserver, tun2brookwssserver. IPv4 and IPv6, TCP and UDP.
 
+❤️ A project by [txthinking.com](https://www.txthinking.com)
+
 ### Pure Go
 
 ipio implements the TCP/IP stack with part of gopacket lib, No C, No CGO, can be used in any OS, such as Linux, macOS, Windows, Android, iOS, etc...
@@ -119,10 +121,6 @@ $ ipio tun2socks5 -s 1.2.3.4:1080 --doNotChangeRouteAndDNS
 ## 开发者
 
 即将到来
-
-## 作者
-
-A project by [txthinking](https://www.txthinking.com)
 
 ## 开源协议
 
