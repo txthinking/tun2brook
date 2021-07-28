@@ -60,7 +60,7 @@ $ ipio tun2brookserver -s 1.2.3.4:9999 -p hello
 ```
 With bypass rules
 ```
-$ ipio tun2brookserver -s 1.2.3.4:9999 -p hello --bypassDomainList https://txthinking.github.io/bypass/chinadomain.txt --bypassCIDR4List https://txthinking.github.io/bypass/chinacidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/chinacidr6.txt
+$ ipio tun2brookserver -s 1.2.3.4:9999 -p hello --bypassDomainList https://txthinking.github.io/bypass/china_domain.txt --bypassCIDR4List https://txthinking.github.io/bypass/china_cidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/china_cidr6.txt
 ```
 Do not change route(include bypass CIDR/IP) and DNS when you want to change by yourself
 ```
@@ -77,7 +77,7 @@ $ ipio tun2brookwsserver -s ws://1.2.3.4:9999 -p hello
 ```
 With bypass rules
 ```
-$ ipio tun2brookwsserver -s ws://1.2.3.4:9999 -p hello --bypassDomainList https://txthinking.github.io/bypass/chinadomain.txt --bypassCIDR4List https://txthinking.github.io/bypass/chinacidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/chinacidr6.txt
+$ ipio tun2brookwsserver -s ws://1.2.3.4:9999 -p hello --bypassDomainList https://txthinking.github.io/bypass/china_domain.txt --bypassCIDR4List https://txthinking.github.io/bypass/china_cidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/china_cidr6.txt
 ```
 Do not change route(include bypass CIDR/IP) and DNS when you want to change by yourself
 ```
@@ -94,7 +94,7 @@ $ ipio tun2brookwssserver -s wss://domain.com:443 -p hello
 ```
 With bypass rules
 ```
-$ ipio tun2brookwssserver -s wss://domain.com:443 -p hello --bypassDomainList https://txthinking.github.io/bypass/chinadomain.txt --bypassCIDR4List https://txthinking.github.io/bypass/chinacidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/chinacidr6.txt
+$ ipio tun2brookwssserver -s wss://domain.com:443 -p hello --bypassDomainList https://txthinking.github.io/bypass/china_domain.txt --bypassCIDR4List https://txthinking.github.io/bypass/china_cidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/china_cidr6.txt
 ```
 Do not change route(include bypass CIDR/IP) and DNS when you want to change by yourself
 ```
@@ -111,7 +111,7 @@ $ ipio tun2socks5 -s 1.2.3.4:1080
 ```
 With bypass rules
 ```
-$ ipio tun2socks5 -s 1.2.3.4:1080 --bypassDomainList https://txthinking.github.io/bypass/chinadomain.txt --bypassCIDR4List https://txthinking.github.io/bypass/chinacidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/chinacidr6.txt
+$ ipio tun2socks5 -s 1.2.3.4:1080 --bypassDomainList https://txthinking.github.io/bypass/china_domain.txt --bypassCIDR4List https://txthinking.github.io/bypass/china_cidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/china_cidr6.txt
 ```
 Do not change route(include bypass CIDR/IP) and DNS when you want to change by yourself
 ```
