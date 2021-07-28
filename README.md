@@ -1,6 +1,6 @@
 # ipio
 
-[中文](README_ZH.md)
+[🇨🇳 中文](README_ZH.md)
 
 [![Donate](https://img.shields.io/badge/Support-Donate-ff69b4.svg)](https://github.com/sponsors/txthinking)
 
@@ -30,7 +30,7 @@ USAGE:
    ipio [global options] command [command options] [arguments...]
 
 VERSION:
-   20210601
+   20210701
 
 AUTHOR:
    Cloud <cloud@txthinking.com>
