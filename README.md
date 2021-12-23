@@ -15,7 +15,7 @@ ipio implements the TCP/IP stack with part of gopacket lib, No C, No CGO, can be
 ### Install via [nami](https://github.com/txthinking/nami)
 
 ```
-$ nami install github.com/txthinking/ipio
+$ nami install ipio
 ```
 
 or download binary from [releases](https://github.com/txthinking/ipio/releases)
