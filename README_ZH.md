@@ -2,7 +2,10 @@
 
 [🇬🇧 English](README.md)
 
-[![捐赠](https://img.shields.io/badge/%E6%94%AF%E6%8C%81-%E6%8D%90%E8%B5%A0-ff69b4.svg)](https://github.com/sponsors/txthinking)
+[🗣 Talks](https://t.me/txthinking_talks)
+[💬 Join](https://join.txthinking.com)
+[🩸 Youtube](https://www.youtube.com/txthinking) 
+[❤️ Sponsor](https://github.com/sponsors/txthinking)
 
 tun2socks5, tun2brookserver, tun2brookwsserver, tun2brookwssserver. IPv4 and IPv6, TCP and UDP.
 
