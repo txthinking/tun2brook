@@ -7,7 +7,7 @@
 [🩸 Youtube](https://www.youtube.com/txthinking) 
 [❤️ Sponsor](https://github.com/sponsors/txthinking)
 
-Proxy all traffic: tun2brooklink, tun2socks5, tun2brookserver, tun2brookwsserver, tun2brookwssserver. IPv4 and IPv6, TCP and UDP.
+👉 Proxy all traffic 👈: tun2brooklink, tun2socks5, tun2brookserver, tun2brookwsserver, tun2brookwssserver. IPv4 and IPv6, TCP and UDP.
 
 ❤️ A project by [txthinking.com](https://www.txthinking.com)
 
