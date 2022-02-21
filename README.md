@@ -53,7 +53,7 @@ COPYRIGHT:
 
 ### tun2brooklink
 
-> ROOT privileges required, more `$ ipio tun2brooklink -h`
+> ROOT privileges required, more `ipio tun2brooklink -h`
 
 ```
 ipio tun2brooklink -l 'brook://...'
@@ -70,7 +70,7 @@ ipio tun2brooklink -s brook://...' --doNotChangeRouteAndDNS
 ### tun2brookserver
 
 > Assume your brook server is `1.2.3.4:9999`, password is `hello`<br/>
-> ROOT privileges required, more `$ ipio tun2brookserver -h`
+> ROOT privileges required, more `ipio tun2brookserver -h`
 
 ```
 ipio tun2brookserver -s 1.2.3.4:9999 -p hello
@@ -87,7 +87,7 @@ ipio tun2brookserver -s 1.2.3.4:9999 -p hello --doNotChangeRouteAndDNS
 ### tun2brookwsserver
 
 > Assume your brook wsserver is `ws://1.2.3.4:9999`, password is `hello`<br/>
-> ROOT privileges required, more `$ ipio tun2brookwsserver -h`
+> ROOT privileges required, more `ipio tun2brookwsserver -h`
 
 ```
 ipio tun2brookwsserver -s ws://1.2.3.4:9999 -p hello
@@ -104,7 +104,7 @@ ipio tun2brookwsserver -s ws://1.2.3.4:9999 -p hello --doNotChangeRouteAndDNS
 ### tun2brookwssserver
 
 > Assume your brook wssserver is `wss://domain.com:443`, password is `hello`<br/>
-> ROOT privileges required, more `$ ipio tun2brookwssserver -h`
+> ROOT privileges required, more `ipio tun2brookwssserver -h`
 
 ```
 ipio tun2brookwssserver -s wss://domain.com:443 -p hello
