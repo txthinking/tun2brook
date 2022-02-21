@@ -51,59 +51,55 @@ COPYRIGHT:
    https://github.com/txthinking/ipio
 ```
 
-### tun2brooklink
+**ROOT/Admin privileges required**
 
-> ROOT/Admin privileges required`
+### tun2brooklink
 
 ```
 ipio tun2brooklink -l 'brook://...'
 ```
 
-Custom DNS, bypass domain and IP, custom route: `ipio tun2brooklink -h`
+Custom DNS, bypass domain and IP, custom route, more: `ipio tun2brooklink -h`
 
 ### tun2brookserver
 
-> Assume your brook server is `1.2.3.4:9999`, password is `hello`<br/>
-> ROOT/Admin privileges required, more `ipio tun2brookserver -h`
+Assume your brook server is `1.2.3.4:9999`, password is `hello`<br/>
 
 ```
 ipio tun2brookserver -s 1.2.3.4:9999 -p hello
 ```
 
-Custom DNS, bypass domain and IP, custom route: `ipio tun2brookserver -h`
+Custom DNS, bypass domain and IP, custom route, more: `ipio tun2brookserver -h`
 
 ### tun2brookwsserver
 
-> Assume your brook wsserver is `ws://1.2.3.4:9999`, password is `hello`<br/>
-> ROOT/Admin privileges required, more `ipio tun2brookwsserver -h`
+Assume your brook wsserver is `ws://1.2.3.4:9999`, password is `hello`<br/>
 
 ```
 ipio tun2brookwsserver -s ws://1.2.3.4:9999 -p hello
 ```
 
-Custom DNS, bypass domain and IP, custom route: `ipio tun2brookwsserver -h`
+Custom DNS, bypass domain and IP, custom route, more: `ipio tun2brookwsserver -h`
 
 ### tun2brookwssserver
 
-> Assume your brook wssserver is `wss://domain.com:443`, password is `hello`<br/>
-> ROOT/Admin privileges required`
+Assume your brook wssserver is `wss://domain.com:443`, password is `hello`<br/>
 
 ```
 ipio tun2brookwssserver -s wss://domain.com:443 -p hello
 ```
 
-Custom DNS, bypass domain and IP, custom route: `ipio tun2brookwssserver -h`
+Custom DNS, bypass domain and IP, custom route, more: `ipio tun2brookwssserver -h`
 
 ### tun2socks5
 
-> Assume your socks5 server is `1.2.3.4:1080`<br/>
-> ROOT/Admin privileges required`
+Assume your socks5 server is `1.2.3.4:1080`
 
 ```
 ipio tun2socks5 -s 1.2.3.4:1080
 ```
 
-Custom DNS, bypass domain and IP, custom route: `ipio tun2socks5 -h`
+Custom DNS, bypass domain and IP, custom route, more: `ipio tun2socks5 -h`
 
 ## Developer
 
