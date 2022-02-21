@@ -9,7 +9,7 @@
 
 👉 **Proxy All Traffic** 👈: tun2brooklink, tun2socks5, tun2brookserver, tun2brookwsserver, tun2brookwssserver. IPv4 and IPv6, TCP and UDP.
 
-❤️ A project by [txthinking.com](https://www.txthinking.com)
+A project by [txthinking.com](https://www.txthinking.com)
 
 ### Install via [nami](https://github.com/txthinking/nami)
 
