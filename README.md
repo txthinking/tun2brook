@@ -60,11 +60,11 @@ ipio tun2brooklink -l 'brook://...'
 ```
 With bypass rules
 ```
-ipio tun2brooklink -s brook://...' --bypassDomainList https://txthinking.github.io/bypass/china_domain.txt --bypassCIDR4List https://txthinking.github.io/bypass/china_cidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/china_cidr6.txt
+ipio tun2brooklink -l brook://...' --bypassDomainList https://txthinking.github.io/bypass/china_domain.txt --bypassCIDR4List https://txthinking.github.io/bypass/china_cidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/china_cidr6.txt
 ```
 Do not change route(include bypass CIDR/IP) and DNS when you want to change by yourself
 ```
-ipio tun2brooklink -s brook://...' --doNotChangeRouteAndDNS
+ipio tun2brooklink -l brook://...' --doNotChangeRouteAndDNS
 ```
 
 ### tun2brookserver
