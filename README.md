@@ -7,21 +7,15 @@
 [🩸 Youtube](https://www.youtube.com/txthinking) 
 [❤️ Sponsor](https://github.com/sponsors/txthinking)
 
-tun2brooklink, tun2socks5, tun2brookserver, tun2brookwsserver, tun2brookwssserver. IPv4 and IPv6, TCP and UDP.
+Proxy all traffic: tun2brooklink, tun2socks5, tun2brookserver, tun2brookwsserver, tun2brookwssserver. IPv4 and IPv6, TCP and UDP.
 
 ❤️ A project by [txthinking.com](https://www.txthinking.com)
-
-### Pure Go
-
-ipio implements the TCP/IP stack with part of gopacket lib, No C, No CGO, can be used in any OS, such as Linux, macOS, Windows, Android, iOS, etc...
 
 ### Install via [nami](https://github.com/txthinking/nami)
 
 ```
 nami install ipio
 ```
-
-or download binary from [releases](https://github.com/txthinking/ipio/releases)
 
 ### Usage
 
@@ -67,7 +61,7 @@ Custom DNS, bypass domain and IP, custom route, more: `ipio tun2brookwssserver -
 
 ### tun2socks5
 
-Assume your socks5 server is `1.2.3.4:1080`
+Assume your socks5 server is `1.2.3.4:1080`. **Your socks5 must support standard UDP, recommand [brook](https://github.com/txthinking/brook) socks5**
 
 ```
 ipio tun2socks5 -s 1.2.3.4:1080
