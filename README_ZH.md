@@ -25,119 +25,60 @@ nami install ipio
 
 ### 使用
 
-```
-NAME:
-   ipio - ipio can convert Network/IPv4/IPv6 layer packets to Transport/TCP/UDP layer packets, such as tun to socks5, tun to brook server, tun to brook wsserver, tun to brook wssserver, ...
+**需要ROOT/Admin权限**
 
-USAGE:
-   ipio [global options] command [command options] [arguments...]
-
-AUTHOR:
-   Cloud <cloud@txthinking.com>
-
-COMMANDS:
-   tun2brooklink      Tun to brook link
-   tun2brookserver    Tun to brook server
-   tun2brookwsserver  Tun to brook wsserver
-   tun2brookwssserver Tun to brook wssserver
-   tun2socks5         Tun to socks5 server
-   help, h            Shows a list of commands or help for one command
-
-GLOBAL OPTIONS:
-   --help, -h     show help (default: false)
-   --version, -v  print the version (default: false)
-
-COPYRIGHT:
-   https://github.com/txthinking/ipio
-```
 ### tun2brooklink
-
-> ROOT 权限需要, 更多 `ipio tun2brooklink -h`
 
 ```
 ipio tun2brooklink -l 'brook://...'
 ```
-Bypass規則
-```
-ipio tun2brooklink -l 'brook://...' --bypassDomainList https://txthinking.github.io/bypass/china_domain.txt --bypassCIDR4List https://txthinking.github.io/bypass/china_cidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/china_cidr6.txt
-```
-不修改路由表和DNS, 自己修改
-```
-ipio tun2brooklink -l 'brook://...' --doNotChangeRouteAndDNS
-```
+
+自定义DNS，分流，路由，等等：`ipio tun2brooklink -h`
 
 ### tun2brookserver
 
-> 假设你的 brook server 是 `1.2.3.4:9999`, password 是 `hello`<br/>
-> ROOT 权限需要, 更多 `ipio tun2brookserver -h`
+假设你的 brook server 是 `1.2.3.4:9999`, password 是 `hello`
 
 ```
 ipio tun2brookserver -s 1.2.3.4:9999 -p hello
 ```
-Bypass規則
-```
-ipio tun2brookserver -s 1.2.3.4:9999 -p hello --bypassDomainList https://txthinking.github.io/bypass/china_domain.txt --bypassCIDR4List https://txthinking.github.io/bypass/china_cidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/china_cidr6.txt
-```
-不修改路由表和DNS, 自己修改
-```
-ipio tun2brookserver -s 1.2.3.4:9999 -p hello --doNotChangeRouteAndDNS
-```
+
+自定义DNS，分流，路由，等等：`ipio tun2brookserver -h`
 
 ### tun2brookwsserver
 
-> 假设你的 brook wsserver 是 `ws://1.2.3.4:9999`, password 是 `hello`<br/>
-> ROOT 权限需要, 更多 `ipio tun2brookwsserver -h`
+假设你的 brook wsserver 是 `ws://1.2.3.4:9999`, password 是 `hello`
 
 ```
 ipio tun2brookwsserver -s ws://1.2.3.4:9999 -p hello
 ```
-Bypass規則
-```
-ipio tun2brookwsserver -s ws://1.2.3.4:9999 -p hello --bypassDomainList https://txthinking.github.io/bypass/china_domain.txt --bypassCIDR4List https://txthinking.github.io/bypass/china_cidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/china_cidr6.txt
-```
-不修改路由表和DNS, 自己修改
-```
-ipio tun2brookwsserver -s ws://1.2.3.4:9999 -p hello --doNotChangeRouteAndDNS
-```
+
+自定义DNS，分流，路由，等等：`ipio tun2brookwsserver -h`
 
 ### tun2brookwssserver
 
-> 假设你的 brook wssserver 是 `wss://domain.com:443`, password 是 `hello`<br/>
-> ROOT 权限需要, 更多 `ipio tun2brookwssserver -h`
+假设你的 brook wssserver 是 `wss://domain.com:443`, password 是 `hello`
 
 ```
 ipio tun2brookwssserver -s wss://domain.com:443 -p hello
 ```
-Bypass規則
-```
-ipio tun2brookwssserver -s wss://domain.com:443 -p hello --bypassDomainList https://txthinking.github.io/bypass/china_domain.txt --bypassCIDR4List https://txthinking.github.io/bypass/china_cidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/china_cidr6.txt
-```
-不修改路由表和DNS, 自己修改
-```
-ipio tun2brookwssserver -s wss://domain.com:443 -p hello --doNotChangeRouteAndDNS
-```
+
+自定义DNS，分流，路由，等等：`ipio tun2brookwssserver -h`
 
 ### tun2socks5
 
-> 假设你的 socks5 server is `1.2.3.4:1080`<br/>
-> ROOT 权限需要, 更多 `ipio tun2socks5 -h`
+假设你的 socks5 server is `1.2.3.4:1080`. **你的socks5必须支持标准 UDP 协议, 推荐 [brook](https://github.com/txthinking/brook) socks5**
 
 ```
 ipio tun2socks5 -s 1.2.3.4:1080
 ```
-Bypass規則
-```
-ipio tun2socks5 -s 1.2.3.4:1080 --bypassDomainList https://txthinking.github.io/bypass/china_domain.txt --bypassCIDR4List https://txthinking.github.io/bypass/china_cidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/china_cidr6.txt
-```
-不修改路由表和DNS, 自己修改
-```
-ipio tun2socks5 -s 1.2.3.4:1080 --doNotChangeRouteAndDNS
-```
+
+自定义DNS，分流，路由，等等：`ipio tun2socks5 -h`
 
 ## 开发者
 
 即将到来
 
-## 开源协议
+## 协议
 
-基于 GPLv3 协议开源
+基于 GPLv3 协议
