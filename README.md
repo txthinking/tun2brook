@@ -53,87 +53,57 @@ COPYRIGHT:
 
 ### tun2brooklink
 
-> ROOT privileges required, more `ipio tun2brooklink -h`
+> ROOT/Admin privileges required`
 
 ```
 ipio tun2brooklink -l 'brook://...'
 ```
-With bypass rules
-```
-ipio tun2brooklink -l brook://...' --bypassDomainList https://txthinking.github.io/bypass/china_domain.txt --bypassCIDR4List https://txthinking.github.io/bypass/china_cidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/china_cidr6.txt
-```
-Do not change route(include bypass CIDR/IP) and DNS when you want to change by yourself
-```
-ipio tun2brooklink -l brook://...' --doNotChangeRouteAndDNS
-```
+
+Custom DNS, bypass domain and IP, custom route: `ipio tun2brooklink -h`
 
 ### tun2brookserver
 
 > Assume your brook server is `1.2.3.4:9999`, password is `hello`<br/>
-> ROOT privileges required, more `ipio tun2brookserver -h`
+> ROOT/Admin privileges required, more `ipio tun2brookserver -h`
 
 ```
 ipio tun2brookserver -s 1.2.3.4:9999 -p hello
 ```
-With bypass rules
-```
-ipio tun2brookserver -s 1.2.3.4:9999 -p hello --bypassDomainList https://txthinking.github.io/bypass/china_domain.txt --bypassCIDR4List https://txthinking.github.io/bypass/china_cidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/china_cidr6.txt
-```
-Do not change route(include bypass CIDR/IP) and DNS when you want to change by yourself
-```
-ipio tun2brookserver -s 1.2.3.4:9999 -p hello --doNotChangeRouteAndDNS
-```
+
+Custom DNS, bypass domain and IP, custom route: `ipio tun2brookserver -h`
 
 ### tun2brookwsserver
 
 > Assume your brook wsserver is `ws://1.2.3.4:9999`, password is `hello`<br/>
-> ROOT privileges required, more `ipio tun2brookwsserver -h`
+> ROOT/Admin privileges required, more `ipio tun2brookwsserver -h`
 
 ```
 ipio tun2brookwsserver -s ws://1.2.3.4:9999 -p hello
 ```
-With bypass rules
-```
-ipio tun2brookwsserver -s ws://1.2.3.4:9999 -p hello --bypassDomainList https://txthinking.github.io/bypass/china_domain.txt --bypassCIDR4List https://txthinking.github.io/bypass/china_cidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/china_cidr6.txt
-```
-Do not change route(include bypass CIDR/IP) and DNS when you want to change by yourself
-```
-ipio tun2brookwsserver -s ws://1.2.3.4:9999 -p hello --doNotChangeRouteAndDNS
-```
+
+Custom DNS, bypass domain and IP, custom route: `ipio tun2brookwsserver -h`
 
 ### tun2brookwssserver
 
 > Assume your brook wssserver is `wss://domain.com:443`, password is `hello`<br/>
-> ROOT privileges required, more `ipio tun2brookwssserver -h`
+> ROOT/Admin privileges required`
 
 ```
 ipio tun2brookwssserver -s wss://domain.com:443 -p hello
 ```
-With bypass rules
-```
-ipio tun2brookwssserver -s wss://domain.com:443 -p hello --bypassDomainList https://txthinking.github.io/bypass/china_domain.txt --bypassCIDR4List https://txthinking.github.io/bypass/china_cidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/china_cidr6.txt
-```
-Do not change route(include bypass CIDR/IP) and DNS when you want to change by yourself
-```
-ipio tun2brookwssserver -s wss://domain.com:443 -p hello --doNotChangeRouteAndDNS
-```
+
+Custom DNS, bypass domain and IP, custom route: `ipio tun2brookwssserver -h`
 
 ### tun2socks5
 
 > Assume your socks5 server is `1.2.3.4:1080`<br/>
-> ROOT privileges required, more `ipio tun2socks5 -h`
+> ROOT/Admin privileges required`
 
 ```
 ipio tun2socks5 -s 1.2.3.4:1080
 ```
-With bypass rules
-```
-ipio tun2socks5 -s 1.2.3.4:1080 --bypassDomainList https://txthinking.github.io/bypass/china_domain.txt --bypassCIDR4List https://txthinking.github.io/bypass/china_cidr4.txt --bypassCIDR6List https://txthinking.github.io/bypass/china_cidr6.txt
-```
-Do not change route(include bypass CIDR/IP) and DNS when you want to change by yourself
-```
-ipio tun2socks5 -s 1.2.3.4:1080 --doNotChangeRouteAndDNS
-```
+
+Custom DNS, bypass domain and IP, custom route: `ipio tun2socks5 -h`
 
 ## Developer
 
