@@ -69,10 +69,6 @@ ipio tun2socks5 -s 1.2.3.4:1080
 
 Custom DNS, bypass domain and IP, custom route, more: `ipio tun2socks5 -h`
 
-## Developer
-
-Coming soon
-
 ## License
 
 Licensed under The GPLv3 License
