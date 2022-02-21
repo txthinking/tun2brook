@@ -7,17 +7,15 @@
 [🩸 Youtube](https://www.youtube.com/txthinking) 
 [❤️ Sponsor](https://github.com/sponsors/txthinking)
 
-全局代理: tun2brooklink, tun2socks5, tun2brookserver, tun2brookwsserver, tun2brookwssserver. IPv4 and IPv6, TCP and UDP.
+👉 **全局代理** 👈 : tun2brooklink, tun2socks5, tun2brookserver, tun2brookwsserver, tun2brookwssserver. IPv4 and IPv6, TCP and UDP.
 
-❤️ A project by [txthinking.com](https://www.txthinking.com)
+A project by [txthinking.com](https://www.txthinking.com)
 
 ### 通过 [nami](https://github.com/txthinking/nami) 安装
 
 ```
 nami install ipio
 ```
-
-或直接下载二进制命令文件 [releases](https://github.com/txthinking/ipio/releases)
 
 ### 使用
 
