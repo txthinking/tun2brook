@@ -69,10 +69,6 @@ ipio tun2socks5 -s 1.2.3.4:1080
 
 自定义DNS，分流，路由，等等：`ipio tun2socks5 -h`
 
-## 开发者
-
-即将到来
-
 ## 协议
 
 基于 GPLv3 协议
