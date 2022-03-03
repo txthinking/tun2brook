@@ -24,17 +24,17 @@ nami install ipio
 ### tun2brooklink
 
 ```
-ipio tun2brooklink -l 'brook://server.wsserver.wssserver.socks5...'
+ipio tun2brooklink -l 'brook://server.wsserver.wssserver.socks5...' --fakeDNS
 ```
 
 自定义DNS，分流，路由，等等：`ipio tun2brooklink -h`
 
-### tun2brookwssserver
+### tun2brookserver
 
-假设你的 brook wssserver 是 `wss://domain.com:443`, password 是 `hello`
+假设你的 brook server 是 `1.2.3.4:9999`, password 是 `hello`
 
 ```
-ipio tun2brookwssserver -s wss://domain.com:443 -p hello
+ipio tun2brookserver -s 1.2.3.4:9999 -p hello --fakeDNS
 ```
 
 自定义DNS，分流，路由，等等：`ipio tun2brookwssserver -h`
@@ -44,7 +44,7 @@ ipio tun2brookwssserver -s wss://domain.com:443 -p hello
 假设你的 socks5 server is `1.2.3.4:1080`. **你的socks5必须支持标准 UDP 协议, 推荐 [brook](https://github.com/txthinking/brook) socks5**
 
 ```
-ipio tun2socks5 -s 1.2.3.4:1080
+ipio tun2socks5 -s 1.2.3.4:1080 --fakeDNS
 ```
 
 自定义DNS，分流，路由，等等：`ipio tun2socks5 -h`
