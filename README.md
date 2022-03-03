@@ -24,7 +24,7 @@ nami install ipio
 ### tun2brooklink
 
 ```
-ipio tun2brooklink -l 'brook://server.wsserver.wssserver.socks5...'
+ipio tun2brooklink -l 'brook://server.wsserver.wssserver.socks5...' --fakeDNS
 ```
 
 Custom DNS, bypass domain and IP, custom route, more: `ipio tun2brooklink -h`
@@ -34,7 +34,7 @@ Custom DNS, bypass domain and IP, custom route, more: `ipio tun2brooklink -h`
 Assume your brook server is `1.2.3.4:9999`, password is `hello`<br/>
 
 ```
-ipio tun2brookserver -s 1.2.3.4:9999 -p hello
+ipio tun2brookserver -s 1.2.3.4:9999 -p hello --fakeDNS
 ```
 
 Custom DNS, bypass domain and IP, custom route, more: `ipio tun2brookserver -h`
@@ -44,7 +44,7 @@ Custom DNS, bypass domain and IP, custom route, more: `ipio tun2brookserver -h`
 Assume your socks5 server is `1.2.3.4:1080`. **Your socks5 must support standard UDP, recommand [brook](https://github.com/txthinking/brook) socks5**
 
 ```
-ipio tun2socks5 -s 1.2.3.4:1080
+ipio tun2socks5 -s 1.2.3.4:1080 --fakeDNS
 ```
 
 Custom DNS, bypass domain and IP, custom route, more: `ipio tun2socks5 -h`
