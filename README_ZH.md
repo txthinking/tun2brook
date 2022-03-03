@@ -24,30 +24,10 @@ nami install ipio
 ### tun2brooklink
 
 ```
-ipio tun2brooklink -l 'brook://...'
+ipio tun2brooklink -l 'brook://server.wsserver.wssserver.socks5...'
 ```
 
 自定义DNS，分流，路由，等等：`ipio tun2brooklink -h`
-
-### tun2brookserver
-
-假设你的 brook server 是 `1.2.3.4:9999`, password 是 `hello`
-
-```
-ipio tun2brookserver -s 1.2.3.4:9999 -p hello
-```
-
-自定义DNS，分流，路由，等等：`ipio tun2brookserver -h`
-
-### tun2brookwsserver
-
-假设你的 brook wsserver 是 `ws://1.2.3.4:9999`, password 是 `hello`
-
-```
-ipio tun2brookwsserver -s ws://1.2.3.4:9999 -p hello
-```
-
-自定义DNS，分流，路由，等等：`ipio tun2brookwsserver -h`
 
 ### tun2brookwssserver
 
