@@ -22,7 +22,7 @@ nami install tun2brook
 **需要ROOT/Admin权限**
 
 ```
-tun2brook --link 'brook://server.wsserver.wssserver.socks5...' --fakeDNS
+tun2brook --link 'brook://server.wsserver.wssserver.socks5...'
 ```
 
 自定义DNS，规则，路由，等等：`tun2brook --help`
