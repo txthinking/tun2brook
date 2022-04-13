@@ -19,10 +19,17 @@ nami install tun2brook
 
 ### 使用
 
-**需要ROOT/Admin权限**
+**需要ROOT权限**
 
 ```
 tun2brook --link 'brook://server.wsserver.wssserver.socks5...'
+```
+
+**Windows 在用管理员身份打开的 GitBash 中**
+
+```
+cd ~/.nami/bin
+./tun2brook.exe --link 'brook://server.wsserver.wssserver.socks5...'
 ```
 
 自定义DNS，规则，路由，等等：`tun2brook --help`
