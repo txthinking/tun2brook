@@ -19,10 +19,17 @@ nami install tun2brook
 
 ### Usage
 
-**ROOT/Admin privileges required**
+**ROOT privileges required**
 
 ```
 tun2brook --link 'brook://server.wsserver.wssserver.socks5...'
+```
+
+**Windows in GitBash with Admin**
+
+```
+cd ~/.nami/bin
+./tun2brook.exe --link 'brook://server.wsserver.wssserver.socks5...'
 ```
 
 Custom DNS, custom rule, custom route, more: `tun2brook --help`
