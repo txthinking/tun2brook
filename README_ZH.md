@@ -25,7 +25,7 @@ nami install tun2brook
 tun2brook --link 'brook://server.wsserver.wssserver.socks5...' --fakeDNS
 ```
 
-自定义DNS，规则，路由，等等：`tun2brooklink --help`
+自定义DNS，规则，路由，等等：`tun2brook --help`
 
 ## 协议
 
