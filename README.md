@@ -1,4 +1,4 @@
-# ipio
+# tun2brooklink
 
 [🇨🇳 中文](README_ZH.md)
 
@@ -7,7 +7,7 @@
 [🩸 Youtube](https://www.youtube.com/txthinking) 
 [❤️ Sponsor](https://github.com/sponsors/txthinking)
 
-👉 **Proxy All Traffic** 👈 : tun2brooklink, tun2socks5. IPv4 and IPv6, TCP and UDP.
+👉 **Proxy All Traffic** 👈 : tun2brooklink: brook server, brook wsserver, brook wssserver, socks5. IPv4 and IPv6, TCP and UDP.
 
 A project by [txthinking.com](https://www.txthinking.com)
 
@@ -21,23 +21,11 @@ nami install ipio
 
 **ROOT/Admin privileges required**
 
-### tun2brooklink
-
 ```
-ipio tun2brooklink -l 'brook://server.wsserver.wssserver.socks5...' --fakeDNS
+tun2brooklink --link 'brook://server.wsserver.wssserver.socks5...' --fakeDNS
 ```
 
-Custom DNS, bypass domain and IP, custom route, more: `ipio tun2brooklink -h`
-
-### tun2socks5
-
-Assume your socks5 server is `1.2.3.4:1080`. **Your socks5 must support standard UDP, recommand [brook](https://github.com/txthinking/brook) socks5**
-
-```
-ipio tun2socks5 -s 1.2.3.4:1080 --fakeDNS
-```
-
-Custom DNS, bypass domain and IP, custom route, more: `ipio tun2socks5 -h`
+Custom DNS, custom rule, custom route, more: `ipio --help`
 
 ## License
 
