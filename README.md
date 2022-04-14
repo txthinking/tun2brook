@@ -7,7 +7,7 @@
 [🩸 Youtube](https://www.youtube.com/txthinking) 
 [❤️ Sponsor](https://github.com/sponsors/txthinking)
 
-👉 **Proxy All Traffic** 👈 : tun2brooklink: brook server, brook wsserver, brook wssserver, socks5 server. IPv4 and IPv6, TCP and UDP.
+👉 **Proxy All Traffic** 👈 : tun2brook: brook server, brook wsserver, brook wssserver, socks5 server. IPv4 and IPv6, TCP and UDP.
 
 A project by [txthinking.com](https://www.txthinking.com)
 
