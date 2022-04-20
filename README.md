@@ -32,7 +32,7 @@ cd ~/.nami/bin
 ./tun2brook.exe --link 'brook://server.wsserver.wssserver.socks5...'
 ```
 
-Custom DNS, custom rule, custom route, more: `tun2brook --help`
+Custom DNS, custom rule, and more: `tun2brook --help`
 
 ## License
 
