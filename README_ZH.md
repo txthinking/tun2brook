@@ -32,7 +32,7 @@ cd ~/.nami/bin
 ./tun2brook.exe --link 'brook://server.wsserver.wssserver.socks5...'
 ```
 
-自定义DNS，规则，路由，等等：`tun2brook --help`
+自定义DNS，规则，等等：`tun2brook --help`
 
 ## 协议
 
