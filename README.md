@@ -22,7 +22,7 @@ nami install tun2brook
 **root/sudo/Windows in GitBash with Admin**
 
 ```
-tun2brook --link 'brook://server.wsserver.wssserver.socks5...'
+tun2brook --link 'brook://server.wsserver.wssserver.socks5...' --fakeDNS
 ```
 
 Custom DNS, custom rule, and more: `tun2brook --help`
