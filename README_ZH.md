@@ -2,14 +2,14 @@
 
 [🇬🇧 English](README.md)
 
-[🗣 News](https://t.me/txthinking_news)
-[💬 Chat](https://join.txthinking.com)
+[🗣 Telegram](https://t.me/txthinking_news)
 [🩸 Youtube](https://www.youtube.com/txthinking) 
-[❤️ Sponsor](https://github.com/sponsors/txthinking)
 
 👉 **全局代理** 👈 : tun2brook: brook server, brook wsserver, brook wssserver, socks5 server. IPv4 and IPv6, TCP and UDP.
 
 A project by [txthinking.com](https://www.txthinking.com)
+
+### [Brook 文档 ->](https://txthinking.github.io/brook/)
 
 ### 通过 [nami](https://github.com/txthinking/nami) 安装
 
