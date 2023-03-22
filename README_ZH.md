@@ -2,7 +2,7 @@
 
 [🇬🇧 English](README.md)
 
-[🗣 Telegram](https://t.me/txthinking_news)
+[🗣 Telegram](https://t.me/s/txthinking_news)
 [🩸 Youtube](https://www.youtube.com/txthinking) 
 
 👉 **全局代理** 👈 : tun to brook and socks5. IPv4 and IPv6, TCP and UDP.
