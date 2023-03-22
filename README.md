@@ -25,8 +25,6 @@ nami install tun2brook
 tun2brook --link 'brook://...' --fakeDNS
 ```
 
-Custom DNS, custom rule, and more: `tun2brook --help`
-
 ## License
 
 Licensed under The GPLv3 License
