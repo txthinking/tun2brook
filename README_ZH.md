@@ -5,7 +5,7 @@
 [🗣 Telegram](https://t.me/txthinking_news)
 [🩸 Youtube](https://www.youtube.com/txthinking) 
 
-👉 **全局代理** 👈 : tun2brook: brook server, brook wsserver, brook wssserver, socks5 server. IPv4 and IPv6, TCP and UDP.
+👉 **全局代理** 👈 : tun to brook and socks5. IPv4 and IPv6, TCP and UDP.
 
 A project by [txthinking.com](https://www.txthinking.com)
 
@@ -22,7 +22,7 @@ nami install tun2brook
 **root/sudo/Windows 在用管理员身份打开的 GitBash**
 
 ```
-tun2brook --link 'brook://server.wsserver.wssserver.socks5...' --fakeDNS
+tun2brook --link 'brook://...' --fakeDNS
 ```
 
 自定义DNS，规则，等等：`tun2brook --help`
