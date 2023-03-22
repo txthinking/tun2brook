@@ -5,7 +5,7 @@
 [🗣 Telegram](https://t.me/txthinking_news)
 [🩸 Youtube](https://www.youtube.com/txthinking) 
 
-👉 **Proxy All Traffic** 👈 : tun2brook: brook server, brook wsserver, brook wssserver, socks5 server. IPv4 and IPv6, TCP and UDP.
+👉 **Proxy All Traffic** 👈 : tun to brook and socks5. IPv4 and IPv6, TCP and UDP.
 
 A project by [txthinking.com](https://www.txthinking.com)
 
@@ -22,7 +22,7 @@ nami install tun2brook
 **root/sudo/Windows in GitBash with Admin**
 
 ```
-tun2brook --link 'brook://server.wsserver.wssserver.socks5...' --fakeDNS
+tun2brook --link 'brook://...' --fakeDNS
 ```
 
 Custom DNS, custom rule, and more: `tun2brook --help`
