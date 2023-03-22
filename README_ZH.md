@@ -25,8 +25,6 @@ nami install tun2brook
 tun2brook --link 'brook://...' --fakeDNS
 ```
 
-自定义DNS，规则，等等：`tun2brook --help`
-
 ## 协议
 
 基于 GPLv3 协议
