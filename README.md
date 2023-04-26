@@ -2,9 +2,6 @@
 
 [🇨🇳 中文](README_ZH.md)
 
-[🗣 Telegram](https://t.me/s/txthinking_news)
-[🩸 Youtube](https://www.youtube.com/txthinking) 
-
 👉 **Proxy All Traffic** 👈 : tun to brook and socks5. IPv4 and IPv6, TCP and UDP.
 
 A project by [txthinking.com](https://www.txthinking.com)
@@ -22,7 +19,7 @@ nami install tun2brook
 **root/sudo/Windows in GitBash with Admin**
 
 ```
-tun2brook --link 'brook://...' --fakeDNS
+tun2brook --link 'brook://...'
 ```
 
 ## License
