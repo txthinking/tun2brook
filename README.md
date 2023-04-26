@@ -21,7 +21,3 @@ nami install tun2brook
 ```
 tun2brook --link 'brook://...'
 ```
-
-## License
-
-Licensed under The GPLv3 License
