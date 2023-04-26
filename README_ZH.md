@@ -2,9 +2,6 @@
 
 [🇬🇧 English](README.md)
 
-[🗣 Telegram](https://t.me/s/txthinking_news)
-[🩸 Youtube](https://www.youtube.com/txthinking) 
-
 👉 **全局代理** 👈 : tun to brook and socks5. IPv4 and IPv6, TCP and UDP.
 
 A project by [txthinking.com](https://www.txthinking.com)
@@ -22,9 +19,5 @@ nami install tun2brook
 **root/sudo/Windows 在用管理员身份打开的 GitBash**
 
 ```
-tun2brook --link 'brook://...' --fakeDNS
+tun2brook --link 'brook://...'
 ```
-
-## 协议
-
-基于 GPLv3 协议
