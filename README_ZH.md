@@ -1,4 +1,4 @@
-# tun2brook
+# tun2brook - [Brook 图形客户端](https://brook.app)的命令行版本
 
 [🇬🇧 English](README.md)
 
