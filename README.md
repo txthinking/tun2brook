@@ -1,4 +1,4 @@
-# tun2brook
+# tun2brook - CLI version of [Brook GUI](https://brook.app)
 
 [🇨🇳 中文](README_ZH.md)
 
