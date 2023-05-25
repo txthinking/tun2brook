@@ -4,8 +4,6 @@
 
 👉 **全局代理** 👈 : tun to brook and socks5. IPv4 and IPv6, TCP and UDP.
 
-A project by [txthinking.com](https://www.txthinking.com)
-
 ### [Brook 文档 ->](https://txthinking.github.io/brook/)
 
 ### 通过 [nami](https://github.com/txthinking/nami) 安装
