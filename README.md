@@ -1,10 +1,8 @@
-# tun2brook - CLI version of [Brook GUI](https://brook.app)
+# tun2brook
 
-[🇨🇳 中文](README_ZH.md)
+> The CLI version of [Brook GUI](https://brook.app)
 
 👉 **Proxy All Traffic** 👈 : tun to brook and socks5. IPv4 and IPv6, TCP and UDP.
-
-### [Brook Document ->](https://txthinking.github.io/brook/)
 
 ### Install via [nami](https://github.com/txthinking/nami)
 
